@@ -3,3 +3,6 @@
 # Estudos do framework Laravel
 
 ### Cada branch mostra um projeto com laravel com um novo aprendizado
+
+- [Criando um projeto](https://github.com/WayneRocha/estudos-laravel/tree/create-project)
+- [Configurando Roteamento](https://github.com/WayneRocha/estudos-laravel/tree/roteamento)
