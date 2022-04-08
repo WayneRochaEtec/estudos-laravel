@@ -24,10 +24,10 @@
             </button>
             <div class="collapse navbar-collapse" id="navbarNavDropdown">
                 <ul class="navbar-nav">
-                    <li class="nav-item active">
-                        <a class="nav-link" href="/">Home <span class="sr-only">(Página atual)</span></a>
+                    <li class="nav-item ">
+                        <a class="nav-link" href="/">Home<span class="sr-only">(Página atual)</span></a>
                     </li>
-                    <li class="nav-item">
+                    <li class="nav-item active">
                         <a class="nav-link" href="/contato">Contato</a>
                     </li>
                 </ul>
@@ -42,7 +42,7 @@
                         </g>
                     </svg>
                 </div>
-                <h1 class="my-5 text-center">Página inicial</h1>
+                <h1 class="my-5 text-center">Página de contato</h1>
             </div>
         </div>
     </body>
