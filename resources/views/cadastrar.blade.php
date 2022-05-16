@@ -25,10 +25,10 @@
         i {
             margin-right: 10px;
         }
-
         main {
             padding: 2rem;
         }
+
         /*----------bootstrap-navbar-css------------*/
         .navbar-logo {
             padding: 15px;
@@ -224,30 +224,35 @@
                         <div class="left"></div>
                         <div class="right"></div>
                     </div>
-                    <li class="nav-item ">
+                    <li class="nav-item active">
                         <a class="nav-link" href="/"><i class="fa-solid fa-plus"></i>Cadastrar</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="/editar/1"><i class="fa-solid fa-pen-field"></i>editar</a>
                     </li>
-                    <li class="nav-item active">
+                    <li class="nav-item">
                         <a class="nav-link" href="/listar/1"><i class="far fa-chart-bar"></i>relatório</a>
                     </li>
                 </ul>
             </div>
         </nav>
     </header>
-    <main>
+    <main class="px-4 ml-5">
         <h1>Produtos</h1>
 
-        <label for="lblNome">Nome:</label>
-        <input type="text" name="nome" value="{{ $produto->nome }}">
-        <br><br>
-        <label for="lblValor">Valor:</label>
-        <input type="text" name="valor" value="{{ $produto->valor }}">
-        <br><br>
-        <label for="lblQuantidade">Quantidade:</label>
-        <input type="text" name="estoque" value="{{ $produto->estoque }}">
+        <form action="/form/cadastrar" method="POST">
+            @csrf
+            <label for="lblNome">Nome:</label>
+            <input type="text" name="nome">
+            <br><br>
+            <label for="lblValor">Valor:</label>
+            <input type="text" name="valor">
+            <br><br>
+            <label for="lblQuantidade">Quantidade:</label>
+            <input type="text" name="estoque">
+            <br><br>
+            <button>Cadastrar</button>
+        </form>
     </main>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script>
